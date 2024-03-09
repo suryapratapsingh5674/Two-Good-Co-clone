@@ -1,0 +1,781 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+
+#nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.5vw;
+    z-index: 999;
+}
+
+#nav-part1{
+    height: 11.4vh;
+    width: 7.2vw;
+    overflow: hidden;
+}
+
+#nav-part1 svg{
+    display: block;
+}
+
+#nav-part2{
+    gap: 2vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#nav-part2 #links a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 4vw;
+    cursor: pointer;
+}
+
+#nav-part2 #icons{
+    background-color: white;
+    border-radius: 50px;
+    padding: .5vw;
+    margin-right: 1vw;
+}
+
+#nav-part2 #icons i{
+    margin-right: 3vw;
+    cursor: pointer;
+}
+
+#page1{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 30vh 2vw 0 2vw;
+}
+
+#page1 h1{
+    font-size: 15.6vw;
+    text-transform: uppercase;
+    font-family: futura;
+    font-weight: 500;
+    line-height: 13vw;
+    letter-spacing: -0.5vw;
+}
+
+.a{
+    display: inline-block;
+}
+
+.b{
+    margin-left: 4vw;
+}
+
+#video-container{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    margin-top: 1vw;
+    background-image: url("Take-The-Pledge.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    margin: 10vh 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box1{
+    height: 93vh;
+    width: 29.8vw; 
+    padding: 3.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.box1 p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.box1 a:hover{
+    border-bottom: 2px solid black;
+}
+
+.box2{
+    height: 93vh;
+    width: 29.8vw;  
+    background-image: url("XXX\ BUILDINGS\ ACROSS\ AUSTRALIA\ \(2\).png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box3{
+    height: 93vh;
+    width: 29.8vw;  
+    background-image: url("XXX\ BUILDINGS\ ACROSS\ AUSTRALIA\ \(2\)\ \(1\).png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vh 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page3 .elem{
+    height: 100%;
+    width: 32%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} 
+
+#page3 .elem .dets{
+    cursor: pointer;
+    height: 8vh;
+    width: 65%;
+    border-radius: 50px;
+    position: absolute;
+    background-color: #E5F0D6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 9999;
+    top:30vh;
+}
+
+#page3 .elem .dets1{
+    height: 40vh;
+    width: 65%;
+    position: absolute;
+    background-color: #E5F0D6;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 15vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    scale: 0;
+}
+
+#y, #h{
+    scale: 0;
+}
+
+#page3 .elem .dets1 .q{
+    margin-top: 30vh;
+    height: 18vh;
+    width: 11vw;
+    margin: 5vh 0;
+}
+
+#page3 .elem .dets1 h6{
+    width: 20vh;
+    font-size: .5vw;
+}
+
+#page3 .elem .dets1 .i{
+    padding: 0 0 0 2vw;
+    margin-top: -5vh;
+}
+
+#fir h5{
+    display: inline;
+}
+
+#page4{
+    height: 53vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+#left{
+    font-size: 1.8vw;
+    font-family: "futura";
+    width: 60%;
+    line-height: 3.5vw;
+}
+
+#right{
+    height: 40vh;
+    width: 25%;
+    font-weight: 50;
+    margin-right: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.8vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#right a{
+    font-size: 1vw;
+    text-decoration: none;
+    color: black;
+}
+
+#right a:hover{
+    border-bottom: 2px solid black;
+}
+
+#page5{
+    min-height: 200vh;
+    width: 100%;
+    padding: 10vh 4vw 0 2vw;
+}
+
+#first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30vh;
+}
+
+#second{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dis{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1vw;
+    font-weight: 100;
+    color: rgb(78, 76, 76);
+}
+
+#page6{
+    min-height: 100vh;
+    width: 100%;
+    margin: 10vh 2vw;
+}
+
+#line{
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 4vw;
+    font-weight: 100;
+    font-size: .8vw;
+    margin-top: 35vh;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #EEEEEE;
+  font-family: "futura";
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+   border-bottom: 1px solid rgb(54, 52, 52);
+    cursor: pointer;
+  width: 20%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper{
+    display: inline;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#scroll{
+    margin-top: 10vh;
+    height: 35vh;
+    width: 95vw;
+}
+
+#fir{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+}
+
+#hed{
+    font-size: 2vw;
+    text-align: center;
+}
+
+#sec{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btn{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 1.5vw 4vw;
+    cursor: pointer;
+}
+
+#subhed{
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+#page7{
+    height: 100vh;
+    width: 100%;
+    margin: 30vh 2vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40vh;
+}
+
+#cont1{
+    height: 60vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#cont1 a{
+    text-decoration: none;
+    color: rgb(68, 66, 66);
+    font-weight: 100;
+}
+
+#cont1 a:hover{
+    border-bottom: 1px solid rgb(60, 59, 59);
+}
+
+#page7 img{
+    height: 90vh;
+    width: 28vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+#cont3{
+    margin-right: 4vw;
+}
+
+#break{
+    height: 10vh;
+    width: 94vw;
+    margin:0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(53, 52, 52);
+    font-family: "fitura";
+    font-size: 1.5vw;
+}
+
+#page8{
+    height: 90vh;
+    width: 99vw;
+    padding: 10vh 2vw;
+    margin-top: 20vh;
+}
+
+#page8 #con1 ul{
+    list-style-type: none;
+}
+
+#con1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sub-con1{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#sub-con1 h6{
+    color: #413e3e;
+    font-size: .8vw;
+}
+
+#sub-con2 img{
+    width: 13vw;
+}
+
+#sub-con3{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#sub-con3 h6{
+    color: #413e3e;
+    font-size: .8vw;
+}
+
+#con2{
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#con2 h6{
+    color: #4c4a4a;
+    margin-right: 2vw;
+    font-size: .8vw;
+    opacity: .8;
+}
+
+#con3{
+    width: 60vw;
+    text-align: center;
+    margin: 10vh 0 0 18vw;
+}
+
+#con3 p{
+    color: #494747;
+    font-size: .8vw;
+}
+
+@media(max-width : 600px){
+
+    *{
+        margin: 0;
+        padding: .3vw;
+        box-sizing: border-box;
+    }
+
+    #page1{
+        height: 40vh;
+        position: relative;
+        width: 100%;
+        padding: 30vh 2vw 0 2vw;
+    }
+
+    #video-container{
+        height: 40vh;
+        width: 100%;
+        background-color: grey;
+        margin-top: 1vw;
+        background-image: url("Take-The-Pledge.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #page2{
+        height: 70vh;
+        width: 100%;
+        margin: 0vh 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #page2 .elem .dets{
+        height: 60px;
+        border-radius: 50px;
+        width: 70%;
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: yellow;
+    }
+    
+    .box1{
+        height: 100%;
+        width: 100%; 
+        padding: 3.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .box2{
+        height: 93vh;
+        width: 29.8vw;  
+        background-image: url("XXX\ BUILDINGS\ ACROSS\ AUSTRALIA\ \(2\).png"); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: none;
+    }
+    
+    .box3{
+        height: 93vh;
+        width: 29.8vw;  
+        background-image: url("XXX\ BUILDINGS\ ACROSS\ AUSTRALIA\ \(2\)\ \(1\).png"); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: none;
+    }
+
+    #page3{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        padding: 3vh 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #page3 .elem{
+        height: 100%;
+        width: 100%;
+        margin-top: 2vh;
+    }
+
+    .b{
+        margin-left: 0vw;
+    }
+
+    #nav-part1{
+        height: 9.3vh;
+        width: 20vw;
+        overflow: hidden;
+    }
+
+   #page3{
+    height: 60vh;
+   }
+
+   #page4{
+    height: 40vh;
+    flex-direction: column;
+    margin-top: 108vh;
+   }
+
+   #links{
+    display: none;
+   }
+
+  #left{
+    width: 100%;
+    font-size: 3vw;
+    line-height: 6vw;
+    margin-top: 5vh;
+  }
+
+  #right{
+    width: 100%;
+    font-size: 6vw;
+    margin-top: 5vh;
+  }
+
+  #right a{
+    font-size: 5vw;
+  }
+
+  #first, #second{
+    height: 5vh;
+  }
+
+  #page5{
+    margin-top: 5vh;
+    /* height: 40%; */
+    margin-bottom: -170vh;
+  }
+
+   #page5 img{
+    height: 20vh;
+    width: 40vw;
+   }
+
+   #page5 h6{
+    font-size: 2vw;
+   }
+
+   #page6{
+    height: 30vh;
+    width: 100%;
+    margin: 2vw;
+   }
+
+   #cont1{
+    width: 100%;
+    margin-top: 30vh;
+   }
+
+   #cont2, #cont3{
+    display: none;
+   }
+
+   #scroll{
+    height: 20vh;
+   }
+
+   .swiper {
+    border-bottom: 1px solid rgb(54, 52, 52);
+     cursor: pointer;
+   width: 40%;
+   height: 100%;
+ }
+
+ #hed{
+    font-size: 4vw;
+ }
+
+ #btn{
+    margin-top: -15vh;
+ }
+
+ #subhed{
+    text-align: center;
+    font-size: 4vw;
+ }
+
+ #sec{
+    height: 10vh;
+ }
+
+ #break{
+    margin-top: -30vh;
+ }
+
+ #page8 h6{
+    font-size: 3vw;
+ }
+
+ #con1{
+    margin-top: -20vh;
+ }
+
+ #con3 p{
+    font-size: 2.5vw;
+ }
+
+ .dets{
+    margin-top: -10vh;
+ }
+
+ #page3 .elem .dets1{
+    height: 20vh;
+ }
+
+ #page3 .elem .dets1 img, #page3 .elem .dets1 .q{
+    /* margin-top: 30vh; */
+    height: 12vh;
+    width: 25vw;
+    padding: 0 4vw;
+}
+
+#page3 .elem .dets1 h6{
+    width: 10vh;
+    font-size: 2vw;
+}
+
+.j{
+    margin:0 0 5vh 4vw;
+}
+
+/* #page3 .elem .dets1 .i{
+    padding:  2vw;
+    margin-top: -5vh;
+} */
+
+
+}
